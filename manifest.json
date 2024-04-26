@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "AlgoCalendar",
+  "version": "1.0.0",
+  "description": "Hello Chrome World!",
+  "icons": {
+    "16": "algo-calendar-icon.png",
+    "48": "algo-calendar-icon.png",
+    "128": "algo-calendar-icon.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "algo-calendar-icon.png",
+      "24": "algo-calendar-icon.png",
+      "32": "algo-calendar-icon.png"
+    },
+    "default_title": "Timer Extension Action Title",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "permissions": ["storage", "alarms", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

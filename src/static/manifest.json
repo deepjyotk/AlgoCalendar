@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name":"algocalendar extension",
+    "description":"Chrome Extension in React",
+    "version":"1.0.0",
+    "action": { 
+        "default_popup":"popup.html" ,
+        "default_icon": "algo-calendar-icon.png"
+    },
+    "options_page": "options.html",
+    "background": {
+        "service_worker": "background.js"
+      },
+      "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["contentScript.js"]
+        }
+      ]
+}
